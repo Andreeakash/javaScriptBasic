@@ -235,7 +235,7 @@
 
 //  iterating an array using for-of loop 
 
-let arr=[1,2,3,4,5,6];
+// let arr=[1,2,3,4,5,6];
 // for(let value of arr){
 //     console.log(value);
 // }
@@ -249,7 +249,7 @@ let arr=[1,2,3,4,5,6];
 // });
 
 //  convert above function into arraow function
-arr.forEach(value=>console.log(value));
+// arr.forEach(value=>console.log(value));
 
 
 // joining an array 
@@ -260,14 +260,66 @@ arr.forEach(value=>console.log(value));
 
 //  split 
 
-let str='i am the intelligent person';
+// let str='i am the intelligent person';
 
-let splitted=str.split(" ");
-console.log(splitted);
+// let splitted=str.split(" ");
+// console.log(splitted);
 
-let another= splitted.join('3');
-console.log(another);
+// let another= splitted.join('3');
+// console.log(another);
 
+// FILTERING AN ARRAY USING FILTER METHOD
+
+
+// let number=[-1,-2,45,6,7,-12,13];
+
+// // let filtered= number.filter(function(element){
+// //     return element>0;
+// // });
+
+// //  using Arrow function
+// let filtered= number.filter(temp=> temp<0);
+//  console.log(filtered);
+
+
+//  MAPPING AN ARRAY USING MAPPING METHOD
+
+// let num =[2,3,4,5];
+
+// console.log(num);
+
+// console.log();
+
+// let mapped = num.map(function(temp){
+//     return 'data'+" "+ temp;
+// });
+//  creating above function into arrow function
+
+// let mapped=num.map(temp=> 'data'+' '+temp);
+
+// console.log(mapped);
+
+
+//  MAPPING WITH OBJECT
+
+
+// let mapped=num.map(function(temp){
+//     return {value:temp};
+// })
+
+// console.log(mapped);
+
+// CHAINNING (MERGE TWO METHOD INTO ONE ) 
+let num =[2,3,-14,5,-7];
+
+let filtered=num.filter(temp=>temp>0);//2,3,5
+
+let mapped=filtered.map(data1=>({value:data1}));
+// let mapped= filtered.map(function(data1){
+//     return {value:data1};
+// });
+
+console.log(mapped);
 
 
 
