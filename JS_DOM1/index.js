@@ -76,7 +76,22 @@
 // bubblingPhase-> target se return jana  (waapas jana ) 
 // by default eventListner work in bubbling phase
 
+//  adding event using id tag
+// const content =document.querySelector('#wrapper');
+// content.addEventListener('click', function(event){
+//     console.log(event);
+// });
 
+//  prevent default -> just like anchor tag will open the link into next window, default prevent will stop the opening link 
+
+let data= document.querySelectorAll('a');
+
+let thirdLink=data[2];
+
+thirdLink.addEventListener('click',function(event){
+    event.preventDefault();
+    console.log("kya hua bhai kyu nhi new window m jaa rhe ho");
+})
 
 
 
